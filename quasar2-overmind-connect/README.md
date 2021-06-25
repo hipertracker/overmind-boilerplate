@@ -1,8 +1,8 @@
 # Quasar 2 + Typescript + Overmind
 
-Simple example of using Quasar 2 + TypeScript + Overmind 28 with connect
+Simple example of using Quasar v2 + TypeScript + Overmind v28 (with [connect()](https://overmindjs.org/views/vue#connect))
 
-- Quasar 2 <https://next.quasar.dev/>
+- Quasar 2 <https://quasar.dev/>
 - Overmind <https://www.overmindjs.org/>
 - TypeScript <https://www.typescriptlang.org/>
 

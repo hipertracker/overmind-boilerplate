@@ -1,10 +1,10 @@
 <template>
   <div class="q-pb-lg">
-    <q-btn round color="primary" icon="add" @click="actions.inc"/>
+    <q-btn round color="primary" icon="add" @click="increment"/>
     <span class="bg-gray-200 text-xl ml-3 mr-3 q-mx-sm text-h6">
-      Counter: {{ state.counter }}
+      Counter: {{ counter }}
     </span>
-    <q-btn round color="primary" icon="remove" @click="actions.dec"/>
+    <q-btn round color="primary" icon="remove" @click="decrement"/>
   </div>
 </template>
 
@@ -14,18 +14,14 @@ import { connect, Context } from '../overmind';
 
 const Component = defineComponent({
   name: 'SimpleCounter',
-  setup() {
-    // const state = hooks.state();
-    // const actions = hooks.actions();
-    // return { state, actions };
-  },
 });
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export default connect((context: Context) => {
   return {
-    state: context.state,
-    actions: context.actions
+    counter: context.state.counter,
+    increment: context.actions.inc,
+    decrement: context.actions.dec,
   }
 }, Component);
 </script>

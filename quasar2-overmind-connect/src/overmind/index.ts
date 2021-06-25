@@ -4,8 +4,6 @@ import { createConnect } from 'overmind-vue';
 import * as actions from './actions';
 import { state } from './state';
 
-// import { createHooks } from 'overmind-vue/vue3';
-
 export const config = {
   state,
   actions
@@ -21,7 +19,5 @@ export type Config = {
 // TS 3.9 using a TYPE (not INTERFACE)
 export type Context = IContext<Config>
 
-// export const hooks = createHooks()
-
-const overmind = createOvermind(config, { devtools: false });
+const overmind = createOvermind(config, { devtools: true });
 export const connect = createConnect(overmind)
