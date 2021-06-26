@@ -4,6 +4,6 @@ type State = {
 };
 
 export const state: State = {
-  welcome: 'Quasar 2 + TypeScript + Overmind 28',
+  welcome: 'Quasar 2 + Vue 3 + TypeScript + Overmind',
   counter: 0,
 };

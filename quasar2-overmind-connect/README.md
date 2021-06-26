@@ -1,10 +1,11 @@
-# Quasar 2 + Typescript + Overmind
+# Quasar 2 + Vue 3 + Typescript + Overmind
 
-Simple example of using Quasar v2 + TypeScript + Overmind v28 (with [connect()](https://overmindjs.org/views/vue#connect))
+Simple example of using Quasar v2 + TypeScript + Overmind (with [connect()](https://overmindjs.org/views/vue#connect))
 
 - Quasar 2 <https://quasar.dev/>
-- Overmind <https://www.overmindjs.org/>
+- Vue 3 <https://v3.vuejs.org/>
 - TypeScript <https://www.typescriptlang.org/>
+- Overmind <https://www.overmindjs.org/> (instead of Vuex)
 
 ## Install the dependencies
 

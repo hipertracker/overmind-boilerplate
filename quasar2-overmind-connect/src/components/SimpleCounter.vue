@@ -1,10 +1,10 @@
 <template>
   <div class="q-pb-lg">
-    <q-btn round color="primary" icon="add" @click="increment"/>
+    <q-btn round color="primary" icon="remove" @click="decrement"/>
     <span class="bg-gray-200 text-xl ml-3 mr-3 q-mx-sm text-h6">
       Counter: {{ counter }}
     </span>
-    <q-btn round color="primary" icon="remove" @click="decrement"/>
+    <q-btn round color="primary" icon="add" @click="increment"/>
   </div>
 </template>
 
@@ -16,7 +16,6 @@ const Component = defineComponent({
   name: 'SimpleCounter',
 });
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export default connect((context: Context) => {
   return {
     counter: context.state.counter,

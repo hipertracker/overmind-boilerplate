@@ -11,7 +11,6 @@ export const config = {
 export type Config = {
   state: typeof config.state;
   actions: typeof config.actions;
-  // effects: typeof config.effects;
 };
 
 // Due to circular typing we have to define an
